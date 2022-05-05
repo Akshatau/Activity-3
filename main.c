@@ -2,6 +2,12 @@
 #include<string.h>
 #include<stdint.h>
 
+**
+ * @brief finds ascii value of array of characters and returns total sum of all ascii values
+ * 
+ * @param name 
+ * @return int 
+ */
 int find_ascii_value(char *name)
 {
     int num,sum=0;
@@ -13,6 +19,13 @@ int find_ascii_value(char *name)
     } 
     return sum;
 }
+
+**
+ * @brief converts ascii total sum into hexadecimal 
+ * 
+ * @param sum 
+ * @return int 
+ */
 int ascii_sum(int sum)
 {
     char hex[15];
@@ -20,7 +33,7 @@ int ascii_sum(int sum)
     while(sum != 0)
     {
         int temp=0;
-        temp = sum % 16;
+        temp = sum % 16;  //to find hexadecimal
         if( temp < 10)
         {
             hex[i] = 48 + temp;
