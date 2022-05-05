@@ -2,7 +2,7 @@
 #include<string.h>
 #include<stdint.h>
 
-**
+/**
  * @brief finds ascii value of array of characters and returns total sum of all ascii values
  * 
  * @param name 
@@ -20,7 +20,7 @@ int find_ascii_value(char *name)
     return sum;
 }
 
-**
+/**
  * @brief converts ascii total sum into hexadecimal 
  * 
  * @param sum 
